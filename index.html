@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShowBird AI Chatbot</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    elevenlabs-convai {
+      width: 100%;
+      height: 100vh;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ShowBird Chatbot -->
+  <elevenlabs-convai
+    agent-id="agent_1101ke75vt2pfhst0bvqcja9v35w"
+    server-location="eu-residency">
+  </elevenlabs-convai>
+
+  <!-- Load widget ONCE -->
+  <script
+    src="https://unpkg.com/@elevenlabs/convai-widget-embed@beta"
+    type="text/javascript">
+  </script>
+
+</body>
+</html>
