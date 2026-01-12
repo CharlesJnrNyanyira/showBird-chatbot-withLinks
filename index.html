@@ -114,6 +114,8 @@
     </script>
   </div>
 
+  <!---hide eleven labs--->
+  
   <script>
     const PASSWORD = "showbird-agent"; // 👈 CHANGE THIS
 
@@ -136,6 +138,22 @@
       }
     });
   </script>
+
+  <script>
+  const observer = new MutationObserver(() => {
+    const branding = document.querySelector('p.whitespace-nowrap');
+    if (branding) {
+      branding.style.display = 'none';
+      observer.disconnect(); // stop watching once hidden
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+</script>
+
 
 </body>
 </html>
